@@ -262,7 +262,7 @@
 		</div>
 
 		<div id="foot">
-			<p class="c"><a href="#">Code source</a> | Généré en 0.02 sec. | DefKra 93 | <a href="#top_page">Retour en haut de page</a> | 10 juil 13:37</p>
+			<p class="c"><a href="https://github.com/rachids/Kraland-Click2Win" target="_blank">Code source</a> | Généré en 0.02 sec. | DefKra 93 | <a href="#top_page">Retour en haut de page</a> | 10 juil 13:37</p>
 		</div>
 	</div>
 </body>	
