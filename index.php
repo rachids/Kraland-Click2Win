@@ -6,10 +6,10 @@
 		<link rel="stylesheet" href="css/kraland.css">
 		<script src="js/jquery2.js"></script>
 		<script src="js/jquery-ui.js"></script>
-		<script src="js/incrementalObject.js"></script>
-		<script src="js/sets.js"></script>
-		<script src="js/ordres.js"></script>
-		<script src="js/kraland.js"></script>
+		<script src="js/jeu/incrementalObject.js"></script>
+		<script src="js/jeu/sets.js"></script>
+		<script src="js/jeu/ordres.js"></script>
+		<script src="js/jeu/kraland.js"></script>
 	</head>
 <body>
 	<div id="header">
