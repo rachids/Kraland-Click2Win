@@ -18,7 +18,7 @@ function init() {
 	mules_list=game.sets.MULES.getSet();//obtain the set of houses
 	for (i in mules_list) 
 	{	
-		$("#available_mules").append("<div class='mule'><strong>"+mules_list[i].getName()+"</strong><span>Prix: <strong id='"+mules_list[i].attributes.type+"'>"+mules_list[i].attributes.cost+" FK</strong></span><button onclick=\"buyMule('"+i+"')\">Acheter</button></div>");
+		$("#available_mules").append("<div class='set-element'><strong class='titre'>"+mules_list[i].getName()+"</strong><p class='description'>"+mules_list[i].attributes.description+"</p><p class='prix'>Prix: <strong id='"+mules_list[i].attributes.type+"'>"+mules_list[i].attributes.cost+" FK</strong></span><button onclick=\"buyMule('"+i+"')\">Acheter</button></div>");
 	}	
 
 	game.addSet("PIOCHES");
@@ -30,7 +30,7 @@ function init() {
 	pioches_list=game.sets.PIOCHES.getSet();//obtain the set of houses
 	for (i in pioches_list) 
 	{	
-		$("#available_pioches").append("<div class='pioche' id='div"+pioches_list[i].attributes.type+"'><strong class='titre'>"+pioches_list[i].getName()+"</strong><p class='description'>"+pioches_list[i].attributes.description+"</p><p class='prix'>Prix: <strong id='"+pioches_list[i].attributes.type+"'>"+pioches_list[i].attributes.cost+" FK</strong><br><button onclick=\"buyPioche('"+i+"')\">Acheter</button></p></div>");
+		$("#available_pioches").append("<div class='set-element' id='div"+pioches_list[i].attributes.type+"'><strong class='titre'>"+pioches_list[i].getName()+"</strong><p class='description'>"+pioches_list[i].attributes.description+"</p><p class='prix'>Prix: <strong id='"+pioches_list[i].attributes.type+"'>"+pioches_list[i].attributes.cost+" FK</strong><br><button onclick=\"buyPioche('"+i+"')\">Acheter</button></p></div>");
 	}
 
 	game.addSet("REGEN");
@@ -42,7 +42,7 @@ function init() {
 	regen_list=game.sets.REGEN.getSet();//obtain the set of houses
 	for (i in regen_list) 
 	{	
-		$("#available_regen").append("<div class='regen'><strong>"+regen_list[i].getName()+"</strong><br>Prix: <strong id='"+regen_list[i].attributes.type+"'>"+regen_list[i].attributes.cost+" FK</strong><br><button onclick=\"buyRegen('"+i+"')\">Acheter</button></div>");
+		$("#available_regen").append("<div class='set-element'><strong class='titre'>"+regen_list[i].getName()+"</strong><p class='description'>"+regen_list[i].attributes.description+"</p><p class='prix'>Prix: <strong id='"+regen_list[i].attributes.type+"'>"+regen_list[i].attributes.cost+" FK</strong><br><button onclick=\"buyRegen('"+i+"')\">Acheter</button></p></div>");
 	}	
 
 	game.addSet("FONCTIONS");
@@ -52,7 +52,7 @@ function init() {
 	game.sets.FONCTIONS.addEntity("Intendant", f4Options);
 	game.sets.FONCTIONS.addEntity("Gouverneur", f5Options);
 	game.sets.FONCTIONS.addEntity("Inspecteur", f6Options);
-	game.sets.FONCTIONS.addEntity("Ministre de l\'Information", f7Options);
+	game.sets.FONCTIONS.addEntity("Minfo", f7Options);
 	game.sets.FONCTIONS.addEntity("Ministre des Affaires Etrangères", f8Options);
 	game.sets.FONCTIONS.addEntity("Premier Ministre", f9Options);
 	game.sets.FONCTIONS.addEntity("PREMIER ELU §§", f10Options);
@@ -60,8 +60,8 @@ function init() {
 	ce_list=game.sets.FONCTIONS.getSet();
 
 	for(i in ce_list) {
-		$("#available_usurping .menu_ordres").append("<span class=\"loadOrder\" data-ordre=\""+ce_list[i].attributes.className+"\">"+ce_list[i].getName()+" - </span>");
-		$("#available_usurping").append("<div class=\"od "+ce_list[i].attributes.className+"\"><div class=\"op\"> <span class=\"oh\">[?]</span> <h4>Usurper un "+ce_list[i].getName()+"</h4> <div class=\"mini\">"+ce_list[i].attributes.description+"</div> <p class=\"os\"><button class='ordreBtn' onclick=\"usurping('"+i+"')\">Ok!</button></p> </div> <div class=\"of\"> Coût: "+ce_list[i].attributes.cost+" FK | Fatigue: "+ce_list[i].attributes.costPDV+" PdV | "+ce_list[i].attributes.txtChance+" "+(game.getPP()/10+ce_list[i].attributes.chance)+"%</div> </div>");
+		$("#available_usurping .menu_ordres").append("<span class=\"loadOrder\" data-ordre=\""+ce_list[i].attributes.className+"\">"+ce_list[i].attributes.type+" - </span>");
+		$("#available_usurping").append("<div class=\"od "+ce_list[i].attributes.className+"\"><div class=\"op\"> <span class=\"oh\">[?]</span> <h4>Usurper un "+ce_list[i].attributes.type+"</h4> <div class=\"mini\">"+ce_list[i].attributes.description+"</div> <p class=\"os\"><button class='ordreBtn' onclick=\"usurping('"+i+"')\">Ok!</button></p> </div> <div class=\"of\"> Coût: "+ce_list[i].attributes.cost+" FK | Fatigue: "+ce_list[i].attributes.costPDV+" PdV | "+ce_list[i].attributes.txtChance+" "+(game.getPP()/10+ce_list[i].attributes.chance)+"%</div> </div>");
 	}
 
 /*

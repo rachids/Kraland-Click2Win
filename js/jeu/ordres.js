@@ -16,6 +16,7 @@ function buyPioche(pioche){
 	if(cout <= game.getScore()) {
 		game.addToScore(-cout);
 		game.addToPointsPerClick(pioche.perClickModifier);
+		//Retrait de la pioche
 		game.sets.PIOCHES.removeEntity(pioche.type);
 		$('#div'+pioche.type).fadeOut();
 	}

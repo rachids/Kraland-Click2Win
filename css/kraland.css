@@ -867,7 +867,7 @@ img[align="middle"] {
 	font-size: large;
 }
 
-.pioche {
+.set-element {
 	display:flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -881,17 +881,17 @@ img[align="middle"] {
 	padding: 3px;
 }
 
-.pioche .titre {
+.set-element .titre {
 	flex: 0 1 100%;
 }
 
-.pioche .description {
+.set-element .description {
 	font-size: small;
 	text-align: left !important;
 	padding-left: 25px;
 }
 
-.pioche .prix {
+.set-element .prix {
 	flex: 0 1 100%;
 	width: 100%;
 	justify-content: space-around;

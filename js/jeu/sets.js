@@ -29,10 +29,10 @@ var o2Options={type:"Consommer", pdvAdd:5, costPDV:0.5, className:"consommer", f
 var o3Options={type:"AjouterPDVMax", pdvMax:1, costPDV:0, className:"ajoutPdvMax", fnName:"ajoutPdvMax", description:"Vous pouvez augmenter d'1 point votre maximum de points de vie en dépensant du franc-kra parce que les PA ne valent rien ici.", cost:305, txtChance:'Automatique -', chance:100};
 
 //La REGEN
-var r1Options={type:"Dodo",regenAdd:0.01, cost:100};
-var r2Options={type:"RedBoule",regenAdd:0.05, cost:400};
-var r3Options={type:"PastilleBonheur",regenAdd:0.5, cost:2500};
-var r4Options={type:"Quebecois",regenAdd:1, cost:10000};
+var r1Options={type:"Dodo",regenAdd:0.01, cost:100, description:"Le meilleur moyen d'avoir des cernes."};
+var r2Options={type:"RedBoule",regenAdd:0.05, cost:400, description:"Boisson qui, en plus d'ajouter tout plein d'énergie, multiplie les risques d'AVC."};
+var r3Options={type:"PastilleBonheur",regenAdd:0.5, cost:2500, description:"Seuls l'élite kralandaise a accès à ces cachetons."};
+var r4Options={type:"Quebecois",regenAdd:1, cost:10000, description: "Quand il est minuit à Kraland, il est 18h là-bas, c'est opti en criss!"};
 
 //Facteur chance
 //var fc1Options={type:"PipedDice",cost:10000,multiplicateur:1.8}
