@@ -13,7 +13,7 @@ function moneyIncrementAnimation(e, amount) {
 	$("#clicker").append(moneyFlowing);
 	
 	moneyFlowing.animate({
-      "top":"-=30px",
+      "top":"-=50px",
       "opacity": 0
     }, { 
     	duration: 750, 
