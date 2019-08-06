@@ -220,7 +220,6 @@ const SUCC_CODE="success10101010";
 			};
 
 			this.removeEntity=function(n_name) {
-				console.dir(entities);
 				
 					if (typeof n_name !== 'undefined' && (n_name in entities))
 					{

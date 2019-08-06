@@ -17,7 +17,7 @@ function buyPioche(pioche){
 		game.addToScore(-cout);
 		game.addToPointsPerClick(pioche.perClickModifier);
 		game.sets.PIOCHES.removeEntity(pioche.type);
-		$('#div'+pioche.type).parent().fadeOut();
+		$('#div'+pioche.type).fadeOut();
 	}
 };
 

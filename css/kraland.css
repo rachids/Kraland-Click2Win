@@ -896,3 +896,7 @@ img[align="middle"] {
 	width: 100%;
 	justify-content: space-around;
 }
+
+.tab-container p {
+	margin-bottom: 20px;
+}

@@ -174,31 +174,36 @@
 					<div id="tabs">
 						<div class="sl">
 							<ul>
-								<li><a href="#tabs-1">Miner</a></li>
-								<li><a href="#tabs-2">Ordres</a></li>
-								<li><a href="#tabs-3">Usurper</a></li>
-								<li><a href="#tabs-4">Mules</a></li>
-								<li><a href="#tabs-5">Scripts de MAJ</a></li>
-								<li><a href="#tabs-6">La quincaillerie de pouch</a></li>
+								<li><a href="#tabs-mine">Miner</a></li>
+								<li><a href="#tabs-ordre">Ordres</a></li>
+								<li><a href="#tabs-pouch">La quincaillerie de pouch</a></li>
+								<li><a href="#tabs-usurper">Usurper</a></li>
+								<li><a href="#tabs-mules">Mules</a></li>
+								<li><a href="#tabs-maj">Scripts de MAJ</a></li>
 							</ul>
 						</div>
 
-						<div id="tabs-1">
+						<div id="tabs-mine" class="tab-container">
+							<h3>Complexe minier d'Or du quartier sur les os</h3>
+							<p>Ramasse du fric pour te sortir de la zère-mi.</p>
 							<div id="clicker">
 								<img src="http://img.kraland.org/2/map/4/3074.gif"><br>
 								<span>&nbsp;Miner comme un prolo&nbsp;</span>
 							</div>
 						</div>
-						<div id="tabs-2">
+						<div id="tabs-ordre" class="tab-container">
 							<h3>Passer un ordre</h3>
+							<p>N'oubliez jamais que les abus de quelques uns peuvent compromettre <em>[message brouillé]</em></p>
+
 							<div id="available_ordres">
 								<p class="menu_ordres">
 									
 								</p>
 							</div>
 						</div>
-						<div id="tabs-3">
+						<div id="tabs-usurper" class="tab-container">
 							<h3>Usurper vos semblables</h3>
+							<p>Voici les différents boutons de l'ascenseur social</p>
 							<!-- mon anglais déchiiiiire -->
 							<div id="available_usurping">
 								<p>Sélectionner la victime de votre usurpation</p>
@@ -207,16 +212,19 @@
 								</p>
 							</div>
 						</div>
-						<div id="tabs-4">
+						<div id="tabs-mules" class="tab-container">
 							<h3>AdopteUneMule.com</h3>
+							<p>La mule est le meilleur ami de l'homme puissant</p>
 							<div id="available_mules"></div>
 						</div>
-						<div id="tabs-5">
+						<div id="tabs-maj" class="tab-container">
 							<h3>MAJ mieux que ça</h3>
+							<p>Avec tout ça, tu devrais passer chaque MAJ avec +20 dans toutes les jauges</p>
 							<div id="available_regen"></div>
 						</div>
-						<div id="tabs-6">
+						<div id="tabs-pouch" class="tab-container">
 							<h3>Boutique réservée aux faces de cul seulement</h3>
+							<p>Vous pouvez demander au gérant de vous montrer ses bobettes à l'effigie de la grandeur de la Russie</p>
 							<div id="available_pioches"></div>
 						</div>
 					</div>
