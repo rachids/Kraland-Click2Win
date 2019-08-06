@@ -1,6 +1,6 @@
-const ERR_DOES_NOT_EXIST_CODE="errdne-999";
-const ERR_INVALID_PARAMS_CODE="errinvalid-989";
-const SUCC_CODE="success10101010";
+var ERR_DOES_NOT_EXIST_CODE="errdne-999";
+var ERR_INVALID_PARAMS_CODE="errinvalid-989";
+var SUCC_CODE="success10101010";
 
 //incremental stuff
 		function Game(a_fps) {
