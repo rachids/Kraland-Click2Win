@@ -1,3 +1,7 @@
+const ERR_DOES_NOT_EXIST_CODE="errdne-999";
+const ERR_INVALID_PARAMS_CODE="errinvalid-989";
+const SUCC_CODE="success10101010";
+
 //incremental stuff
 		function Game(a_fps) {
 			
@@ -214,6 +218,21 @@
 				else
 					return -999;//either it' snot an entity type, or it is but the name already exists	
 			};
+
+			this.removeEntity=function(n_name) {
+				console.dir(entities);
+				
+					if (typeof n_name !== 'undefined' && (n_name in entities))
+					{
+						delete entities[n_name];
+						this.length-=1;
+						return SUCC_CODE;
+					
+					}
+					else
+						return ERR_DOES_NOT_EXIST_CODE;
+				
+				};
 			
 		
 		};

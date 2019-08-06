@@ -866,3 +866,33 @@ img[align="middle"] {
 	font-weight: bold;
 	font-size: large;
 }
+
+.pioche {
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 420px;
+	min-height: 75px;
+	margin: auto;
+	border: 1px solid #000;
+	justify-content: space-between;
+	font-size: medium;
+	margin-bottom: 3px;
+	padding: 3px;
+}
+
+.pioche .titre {
+	flex: 0 1 100%;
+}
+
+.pioche .description {
+	font-size: small;
+	text-align: left !important;
+	padding-left: 25px;
+}
+
+.pioche .prix {
+	flex: 0 1 100%;
+	width: 100%;
+	justify-content: space-around;
+}

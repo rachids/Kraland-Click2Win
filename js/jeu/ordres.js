@@ -2,12 +2,22 @@ function buyMule(mulan){
 	var mule = game.sets.MULES.getSet()[mulan].attributes;
 	var cout = parseInt($('#'+mule.type).html());
 	if(cout <= game.getScore()) {
-		console.log(cout);
 		game.addToScore(-cout);
 		game.addToPointsPerSecond(mule.perSecondModifier);
 		game.addToPointsPerClick(mule.perSecondModifier/100);
 		cout+= Math.floor(cout*0.15);
 		$('#'+mule.type).html(cout + ' FK');
+	}
+};
+
+function buyPioche(pioche){
+	var pioche = game.sets.PIOCHES.getSet()[pioche].attributes;
+	var cout = parseInt($('#'+pioche.type).html());
+	if(cout <= game.getScore()) {
+		game.addToScore(-cout);
+		game.addToPointsPerClick(pioche.perClickModifier);
+		game.sets.PIOCHES.removeEntity(pioche.type);
+		$('#div'+pioche.type).parent().fadeOut();
 	}
 };
 

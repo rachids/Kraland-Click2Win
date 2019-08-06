@@ -179,7 +179,7 @@
 								<li><a href="#tabs-3">Usurper</a></li>
 								<li><a href="#tabs-4">Mules</a></li>
 								<li><a href="#tabs-5">Scripts de MAJ</a></li>
-								<li><a href="#tabs-6">Corruption du Staff</a></li>
+								<li><a href="#tabs-6">La quincaillerie de pouch</a></li>
 							</ul>
 						</div>
 
@@ -216,8 +216,8 @@
 							<div id="available_regen"></div>
 						</div>
 						<div id="tabs-6">
-							<h3>Truque les dés</h3>
-							<div id="available_fc"></div>
+							<h3>Boutique réservée aux faces de cul seulement</h3>
+							<div id="available_pioches"></div>
 						</div>
 					</div>
 				</div>
