@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/kraland.css">
 		<script src="js/jquery2.js"></script>
 		<script src="js/jquery-ui.js"></script>
+		<script src="js/ui/helpers.js"></script>
 		<script src="js/jeu/incrementalObject.js"></script>
 		<script src="js/jeu/sets.js"></script>
 		<script src="js/jeu/ordres.js"></script>

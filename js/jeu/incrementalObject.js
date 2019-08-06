@@ -101,9 +101,10 @@
 				}
 			}
 			
-			this.increaseScorePerClick=function() {
+			this.increaseScorePerClick=function(e) {
 				//increment the score per click
 				score+=pointsPerClick;
+				moneyIncrementAnimation(e, pointsPerClick);
 			};
 			
 			this.addToScore=function(value) {
