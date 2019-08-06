@@ -4,7 +4,7 @@ function buyMule(mulan){
 	if(cout <= game.getScore()) {
 		game.addToScore(-cout);
 		game.addToPointsPerSecond(mule.perSecondModifier);
-		game.addToPointsPerClick(mule.perSecondModifier/100);
+		game.addToPointsPerClick(mule.perSecondModifier/10);
 		cout+= Math.floor(cout*0.15);
 		$('#'+mule.type).html(cout + ' FK');
 	}
@@ -128,8 +128,6 @@ function usurping(poste){
 		var jet = randeaume(100);
 		var chance = poste.chance + (game.getPP()/10) + game.getFacteurChance();
 
-		console.log(poste);
-
 		game.addToScore(-poste.cost);
 		game.addToPDV(-poste.costPDV);
 
@@ -140,6 +138,7 @@ function usurping(poste){
 			game.setFonctionCourante(poste.type);
 			game.addToPP(ppAdd);
 			game.addToPPperSecond(poste.ppModifier);
+			game.addToPointsPerClick(poste.salaire);
 
 			gtfo(poste.className);
 		} else if(jet === 100){
@@ -152,6 +151,7 @@ function usurping(poste){
 			var message = "Vous êtes maintenant un parfait <strong>"+poste.type+"</strong>.";
 			game.setFonctionCourante(poste.type);
 			game.addToPPperSecond(poste.ppModifier);
+			game.addToPointsPerClick(poste.salaire);
 			gtfo(poste.className);
 		} else{
 			var titre = "Action Ratée";
