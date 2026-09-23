@@ -1,0 +1,9 @@
+dist/
+coverage/
+node_modules/
+package-lock.json
+
+# Verbatim copies of the real Kraland page. Restyling/restructuring them is out of scope,
+# and index.html contains a pre-existing stray </a> that Prettier refuses to parse.
+css/kraland.css
+index.html

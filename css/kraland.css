@@ -272,7 +272,7 @@ span.checkbox {
 	height: 25px; 
 	margin-top:-3px;
 	padding: 0 5px 0 0; 
-	background: url(http://www.kramages.org/css/1/checkbox.gif) no-repeat; 
+	background: url(https://www.kramages.org/css/1/checkbox.gif) no-repeat; 
 	display: block; 
 	clear: left; 
 	float: left; 
@@ -282,7 +282,7 @@ span.radio {
 	width: 19px; 
 	height: 19px; 
 	padding: 0px 5px 0 0; 
-	background: url(http://www.kramages.org/css/1/radio.gif) no-repeat; 
+	background: url(https://www.kramages.org/css/1/radio.gif) no-repeat; 
 	display: block; 
 	clear: left; 
 	float: left; 
@@ -293,7 +293,7 @@ span.select {
 	width: 250px;
 	height: 15px;
 	color: #fff; 
-	background: url(http://www.kramages.org/css/1/select.gif) no-repeat; 
+	background: url(https://www.kramages.org/css/1/select.gif) no-repeat; 
 	overflow: hidden; 
 } 
 .c {
@@ -342,7 +342,7 @@ span.select {
 
 #clicker{
 	text-align: center;
-	cursor:url(http://img.kraland.org/2/mat/21/2112.gif),pointer;
+	cursor:url(https://img.kraland.org/2/mat/21/2112.gif),pointer;
 	border-radius:5px;
 	height:100px;
 	width:200px;
